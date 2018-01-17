@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
         setContentView(R.layout.activity_main);
 
         rl = ((RelativeLayout) findViewById(R.id.video_play_quan));
-        mVideoPath = "/data/video.mp4";//使用了盒子的本地视频。测试父母类用的，父母乐连不上网所以用了本地视频
-//        mVideoPath = "http://www.jmzsjy.com/UploadFile/微课/地方风味小吃——宫廷香酥牛肉饼.mp4";//广电精灵可以用这个在线视频
+//        mVideoPath = "/data/video.mp4";//使用了盒子的本地视频。测试父母类用的，父母乐连不上网所以用了本地视频
+        mVideoPath = "http://www.jmzsjy.com/UploadFile/微课/地方风味小吃——宫廷香酥牛肉饼.mp4";//广电精灵可以用这个在线视频
         File videoFile = new File(mVideoPath);
 
         mController = new MediaController(this);
